@@ -4,7 +4,7 @@ import Actions from "./Actions";
 function ExpensesList() {
   const { transactions } = useTransactions();
   return (
-    <table className="mx-auto my-4 w-[80%]">
+    <table className="mx-auto my-4 w-[80%] lg:w-[60%]">
       <thead className="bg-slate-300">
         <tr className="border-b-2 border-slate-400">
           <th className="p-2">S.No</th>
@@ -32,7 +32,7 @@ function ExpensesList() {
             <td className="p-2">{transaction.transactionDate}</td>
             <td className="p-2 capitalize">{transaction.transactionType}</td>
             <td
-              className={`${transaction.transactionType === "debit" ? "text-red-500" : "text-green-600"} p-2`}
+              className={`${transaction.transactionType === "debit" ? "text-red-500" : "text-green-600"} p-2 font-semibold`}
             >
               {transaction.amount}
             </td>

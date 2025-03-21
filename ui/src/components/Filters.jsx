@@ -6,7 +6,7 @@ import { useTransactions } from "../contexts/TransactionContext";
 function Filters() {
   const { type, setType, frequency, setFrequency } = useTransactions();
   return (
-    <div className="mx-auto my-4 flex w-[80%] items-end justify-between p-4">
+    <div className="mx-auto my-4 flex w-[80%] items-end justify-between p-4 lg:w-[60%]">
       <div className="flex flex-col gap-2">
         <span className="mr-4 font-semibold">Select Frequency</span>
         <Dropdown>
